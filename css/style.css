@@ -1,0 +1,250 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  color: #7a0b0b;
+  background-color: #fff;
+}
+
+header {
+  background-color: #f1a5a5;
+  color: rgb(221, 14, 14);
+  padding: 1rem 0;
+}
+
+header > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;  
+    padding: 0 20px;  
+}
+
+.product-card {
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 25px;
+    text-align: center;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+
+
+.logo {
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  gap: 10px;
+}
+
+.logo img {
+  border-radius: 50%;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #a53057;
+}
+
+/* Заголовок страницы */
+h1 {
+  text-align: center;
+  margin: 2rem 0 1.5rem;
+  color: #c7bfbf;
+  font-size: 2.2rem;
+}
+
+/* Основной контент */
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px 3rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+/* Карточки товаров */
+.div2 {
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.div2:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.pink-text {
+  background-color: #ff6b6b;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+.caps3 {
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.div3 {
+  text-align: center;
+  padding: 1rem;
+}
+
+.div3 img {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+.div2 p {
+  padding: 0 1rem 0.5rem;
+  text-align: center;
+}
+
+.div2 a {
+  display: block;
+  text-align: center;
+  padding: 0.8rem 1rem;
+  color: white;
+  text-decoration: none;
+  background-color: #d6bbb8;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+form {
+    background-color: #83667d;
+    padding: 30px;
+    border-radius: 16px;
+    max-width: 600px;
+    margin: 0 auto;
+    box-shadow: 0 8px 20px rgba(235, 179, 179, 0.678);
+    border: 1px solid #c59595;
+}
+
+form div {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+
+/* Подвал (footer) */
+footer {
+  background-color: #e9979e;
+  color: rgb(233, 27, 27);
+  padding: 2rem 0 1rem;
+}
+
+footer > div:first-of-type {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
+  max-width: 1200px;
+  margin: 0 auto 2rem;
+  padding: 0 20px;
+}
+
+footer h4 {
+  margin-bottom: 1rem;
+  color: #810707;
+}
+
+footer p {
+  margin-bottom: 0.5rem;
+}
+
+footer > div:last-of-type {
+  text-align: center;
+  padding: 1rem 20px;
+  border-top: 1px solid #4a627a;
+  margin-top: 1rem;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+  header > div {
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+  }
+  
+  nav ul {
+    gap: 1rem;
+  }
+  
+  h1 {
+    font-size: 1.8rem;
+    margin: 1.5rem 0 1rem;
+  }
+  
+  footer > div:first-of-type {
+    flex-direction: column;
+    gap: 2rem;
+  }
+}
+section {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.hero {
+    background: linear-gradient(135deg, rgba(79, 12, 105, 0.61) 0%, rgba(11, 21, 167, 0.3) 100%), url('https://via.placeholder.com/1920x600?text=Hero+Background');
+    background-size: cover;
+    background-position: center;
+    padding: 80px 0;
+    text-align: center;
+    color: rgb(179, 170, 170);
+}
+
+.hero h1, .hero p {
+    color: white;
+}
+
+.hero .btn {
+    background-color: #e67e22;
+}
+
+.hero .btn:hover {
+    background-color: #d35400;
+}
+
+
+

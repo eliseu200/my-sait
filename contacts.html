@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Главная страница</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div>
+            <div class="logo"><img src="img/logo.jpg" 
+                height="100px" width="100px" alt="Логотип">Суси</div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="catalog.html">Каталог</a></li>
+                    <li><a href="contacts.html">Контакты</a></li>
+                    <li><a href="feedback.html">Обратная связь</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <h1>Наши контакты</h1>
+
+    <main>
+        <section class="contact-info">
+            <h2>Контактная информация</h2>
+            <address>
+                <p><strong>Адрес:</strong> г.Северск, ул. Солнечная 4</p>
+                <p><strong>Телефон:</strong> <a href="tel:+77777777777">+7 (777) 777-77-77</a></p>
+                <p><strong>Email:</strong> <a href="mailto:sysi@gmail.com">sysi@gmail.com</a></p>
+                <p><strong>Режим работы:</strong> Пн‑Пт: 8:00–22:00</p>
+                <!-- Карта: iframe -->
+<div class="map">
+    <iframe id="map_31810991" frameborder="0" width="100%" height="600px" src="https://makemap.2gis.ru/widget?data=eJw1jsFuxCAMRP_FvaIVkJAFPmCr3vZWqdUeouC2SCRGxCt1G-XfS5LWJ8sznnkLUAlYMDwjjcgl4gz-fQF-ZAQPF-z5XhAE5EIZC-_6AgMlKlV_ktqqD111jpy2j7oGnIcSM0eajsPPyxTwG7yS_7MK-DwKH1vcX9uV4sTVP1CFilPPO4xtT05pe3bCdCdjdevsrf7HAF5L26w3AWOfrzTHo3GB1DP4w2y0srJzRnZGQNrkPa5tO-XOstGuqXhEY4WzNbSCU0qvX4jpbb9yueP6C8ndWTY" sandbox="allow-modals allow-forms allow-scripts allow-same-origin allow-popups allow-top-navigation-by-user-activation"></iframe>
+
+</div>
+
+            </address>
+        </section>
+
+        <section class="contact-form">
+            <h2>Напишите нам</h2>
+            <form action="#" method="POST">
+                <div class="form-group">
+                    <label for="name">Имя *</label>
+                    <input type="text" id="name" name="user_name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email *</label>
+                    <input type="email" id="email" name="user_email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Телефон</label>
+                    <input type="tel" id="phone" name="user_phone">
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Сообщение *</label>
+                    <textarea id="message" name="user_message" rows="5" required></textarea>
+                </div>
+
+                <button type="submit">Отправить сообщение</button>
+            </form>
+        </section>
+    </main>
+
+
+    <footer>
+        <div>
+            <div>
+                <h4>О проекте</h4>
+                <p>Учебная верстка. Тема сайта задается студентом. Все страницы связаны.</p>
+            </div>
+            <div>
+                <h4>Контакты</h4>
+                <p>Email: sysi@gmail.com</p>
+                <p>Телефон: +7 (777) 777-77-77</p>
+                <p>Адрес: ул. Солнечная, Северск</p>
+            </div>
+            <div>
+                <h4>Подробнее смотрите у нас в соцсетях</h4>
+                <p>Соцсети: VK, Max, Однокласники</p>
+            </div>
+        </div>
+        <div>
+            <p>&copy; 2026 Все права защищены. Учебный проект.</p>
+        </div>
+    </footer>
+</body>
+</html>
