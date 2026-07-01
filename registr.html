@@ -22,28 +22,35 @@
             </nav>
         </div>
     </header>
-    <h1>Наши контакты</h1>
-
-    <main>
-        <section class="contact-info">
-            <h2>Контактная информация</h2>
-            <address>
-                <p><strong>Адрес:</strong> г.Северск, ул. Солнечная 4</p>
-                <p><strong>Телефон:</strong> <a href="tel:+79138454811">+7 (913) 845-48-11</a></p>
-                <p><strong>Email:</strong> <a href="mailto:RESTOR_BIST@gmail.com">RESTOR_BIST@gmail.com</a></p>
-                <p><strong>Режим работы:</strong> Пн‑Пт: 8:00–22:00</p>
-                <!-- Карта: iframe -->
-<div class="map">
-    <iframe id="map_31810991" frameborder="0" width="100%" height="600px" src="https://makemap.2gis.ru/widget?data=eJw1jsFuxCAMRP_FvaIVkJAFPmCr3vZWqdUeouC2SCRGxCt1G-XfS5LWJ8sznnkLUAlYMDwjjcgl4gz-fQF-ZAQPF-z5XhAE5EIZC-_6AgMlKlV_ktqqD111jpy2j7oGnIcSM0eajsPPyxTwG7yS_7MK-DwKH1vcX9uV4sTVP1CFilPPO4xtT05pe3bCdCdjdevsrf7HAF5L26w3AWOfrzTHo3GB1DP4w2y0srJzRnZGQNrkPa5tO-XOstGuqXhEY4WzNbSCU0qvX4jpbb9yueP6C8ndWTY" sandbox="allow-modals allow-forms allow-scripts allow-same-origin allow-popups allow-top-navigation-by-user-activation"></iframe>
-
-</div>
-
-            </address>
-        </section>
-
-       
-    </main>
-
+    <h1>Добро пожаловать в наше кафе!</h1>
+    <maln>
+        <div class="register-container">
+            <h2>Зарегистрируйтесь</h2>
+            <form action="/register" method="POST">
+              <div class="form-group">
+                <label for="username">Имя пользователя</label>
+                <input type="text" id="username" name="username" required placeholder="Придумайте имя" />
+              </div>
+      
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required  />
+              </div>
+      
+              <div class="form-group">
+                <label for="password">Пароль</label>
+                <input type="password" id="password" name="password" required minlength="6" placeholder="Минимум 6 символов" />
+              </div>
+      
+              <div class="form-group">
+                <label for="confirm-password">Подтвердите пароль</label>
+                <input type="password" id="confirm-password" name="confirm_password" required minlength="6" />
+              </div>
+      
+              <button type="submit" class="submit-btn">Зарегистрироваться</button>
+            </form>
+          </div>
+    </maln>
 
     <footer>
         <div>
